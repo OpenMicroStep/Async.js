@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "umd",
+        "lib": [ "es6", "dom" ],
+        "target": "es5",
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "strictNullChecks": true,
+        "outDir": "./dist",
+        "declaration": true
+    },
+    "files": [
+        "src/async.ts"
+    ]
+}

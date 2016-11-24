@@ -1,0 +1,23 @@
+{
+  "name": "@microstep/async",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/async.js",
+  "types": "dist/async.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.logitud.fr:Recherche/Async.js.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.0.10"
+  }
+}
