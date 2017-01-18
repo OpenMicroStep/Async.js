@@ -255,12 +255,12 @@ class FluxImpl<T> extends Async<T> {
         this._lastInterval !== null && this._timer === null) {
       if (this._lastInterval === 0) {
         this._state = AsyncState.Aborted;                                         ///// aborted
-        this._actions[0](this);
+        this._runAction(this._actions[0]);
       }
       else {
         this._timer = setInterval(() => {
           if (this._actions.length > 0 && this._state !== AsyncState.Finishing)
-            this._actions[0](this);
+            this._runAction(this._actions[0]);
           else this._stopInterval();
         }, this._lastInterval);
       }
