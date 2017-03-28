@@ -249,7 +249,7 @@ class FluxImpl<T> extends Async<T> {
   }
 
   _startInterval() {
-    if (this._lastInterval === void 0 || this._lastInterval < 0)
+    if (this._lastInterval !== null && (this._lastInterval === void 0 || this._lastInterval < 0))
       this._lastInterval = null;
     if (this._state === AsyncState.Started && this._actions.length > 0 &&
         this._lastInterval !== null && this._timer === null) {
